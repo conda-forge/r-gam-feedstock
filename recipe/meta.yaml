@@ -1,4 +1,4 @@
-{% set version = '1.14-4' %}
+{% set version = "1.15" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/gam_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/gam/gam_{{ version }}.tar.gz
-  sha256: 6a65d7f707c4833bf2f0b51f959e1bf05d83a75848884b65f6b40787e737aa8e
+  sha256: 1e365f9f328e018955140b4d842a30a499f4877291cb88cb9f147be79b62d1f0
 
 build:
   number: 0
