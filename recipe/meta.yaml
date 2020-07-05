@@ -1,4 +1,4 @@
-{% set version = '1.16.1' %}
+{% set version = "1.20" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gam_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gam/gam_{{ version }}.tar.gz
-  sha256: 80d04102c6152143e8ed364f91eb312e413f73b8fcab7cf15d677867a16e74b9
+  sha256: 91eb416ba06aa1c3f611661530467f4513992f6c168e3f6e474cf57bae131efe
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,11 +46,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=gam
   license: GPL-2
-  summary: Functions for fitting and working with generalized additive models, as described in
-    chapter 7 of "Statistical Models in S" (Chambers and Hastie (eds), 1991), and "Generalized
-    Additive Models" (Hastie and Tibshirani, 1990).
+  summary: Functions for fitting and working with generalized additive models, as described in chapter 7 of "Statistical Models in S" (Chambers and Hastie (eds), 1991), and "Generalized Additive Models" (Hastie and Tibshirani, 1990).
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
