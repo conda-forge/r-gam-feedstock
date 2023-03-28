@@ -1,11 +1,22 @@
+About r-gam-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gam-feedstock/blob/main/LICENSE.txt)
+
 About r-gam
-===========
+-----------
 
 Home: https://CRAN.R-project.org/package=gam
 
 Package license: GPL-2.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gam-feedstock/blob/main/LICENSE.txt)
+Summary: Functions for fitting and working with generalized additive models, as described in chapter 7 of "Statistical Models in S" (Chambers and Hastie (eds), 1991), and "Generalized Additive Models" (Hastie and Tibshirani, 1990).
+About r-gam
+-----------
+
+Home: https://CRAN.R-project.org/package=gam
+
+Package license: GPL-2.0-only
 
 Summary: Functions for fitting and working with generalized additive models, as described in chapter 7 of "Statistical Models in S" (Chambers and Hastie (eds), 1991), and "Generalized Additive Models" (Hastie and Tibshirani, 1990).
 
