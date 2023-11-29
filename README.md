@@ -3,6 +3,7 @@ About r-gam-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gam-feedstock/blob/main/LICENSE.txt)
 
+
 About r-gam
 -----------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=gam
 Package license: GPL-2.0-only
 
 Summary: Functions for fitting and working with generalized additive models, as described in chapter 7 of "Statistical Models in S" (Chambers and Hastie (eds), 1991), and "Generalized Additive Models" (Hastie and Tibshirani, 1990).
+
 About r-gam
 -----------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
