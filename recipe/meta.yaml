@@ -12,24 +12,30 @@ source:
   sha256: 249afaa3497ba1279ff5d7f61e0e46c56becff72db42cdb464867563937351d5
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
+    - cross-r-base {{ r_base }}        # [build_platform != target_platform]
+    - r-foreach                        # [build_platform != target_platform]
     - {{ compiler('c') }}              # [not win]
     - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('fortran') }}        # [not win]
     - {{ compiler('m2w64_fortran') }}  # [win]
-    - {{ posix }}filesystem        # [win]
+    - {{ posix }}filesystem            # [win]
     - {{ posix }}make
-    - {{ posix }}sed               # [win]
-    - {{ posix }}coreutils         # [win]
-    - {{ posix }}zip               # [win]
+    - {{ posix }}sed                   # [win]
+    - {{ posix }}coreutils             # [win]
+    - {{ posix }}zip                   # [win]
   host:
     - r-base
     - r-foreach
@@ -52,19 +58,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-
-# Package: gam
-# Type: Package
-# Title: Generalized Additive Models
-# Date: 2018-07-19
-# Version: 1.16.1
-# Author: Trevor Hastie
-# Description: Functions for fitting and working with generalized additive models, as described in chapter 7 of "Statistical Models in S" (Chambers and Hastie (eds), 1991), and "Generalized Additive Models" (Hastie and Tibshirani, 1990).
-# Maintainer: Trevor Hastie <hastie@stanford.edu>
-# Depends: stats, splines, foreach
-# Suggests: akima
-# License: GPL-2
-# NeedsCompilation: yes
-# Packaged: 2019-07-03 07:29:25 UTC; ripley
-# Repository: CRAN
-# Date/Publication: 2019-07-03 08:10:33 UTC
