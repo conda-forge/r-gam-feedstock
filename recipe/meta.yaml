@@ -1,4 +1,4 @@
-{% set version = "1.22-6" %}
+{% set version = "1.22-7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gam_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gam/gam_{{ version }}.tar.gz
-  sha256: 249afaa3497ba1279ff5d7f61e0e46c56becff72db42cdb464867563937351d5
+  sha256: d513964b0cb63e11e76466cae775e75b559386d4ea6dee41612c35b85125eebc
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
